@@ -1,0 +1,20 @@
+.background{
+    background-color: black(151, 34, 34);
+    display: flex;
+    justify-content: center;
+}
+
+.headshotContainer{
+    background-color:turquoise;
+    width: 325px;
+    height: 325px;
+    border-radius: 10%;
+}
+
+.headshot >img{
+    width: 175px;
+    height: 200px;
+    align-content: center;
+
+}
+
