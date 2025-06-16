@@ -1,20 +1,37 @@
-.background{
-    background-color: black(151, 34, 34);
-    display: flex;
-    justify-content: center;
+
+body{
+    background-color: #0F172A	;
 }
 
-.headshotContainer{
-    background-color:turquoise;
-    width: 325px;
-    height: 325px;
-    border-radius: 10%;
+.background {
+  color: #F9FAFB;
+  display: flex;
+  justify-content: center;
 }
 
-.headshot >img{
-    width: 175px;
-    height: 200px;
-    align-content: center;
-
+.headshotTitleContainer {
+  background-color:#1E293B;
+  width: 725px;
+  border-radius: 12%;
+  padding-top: 50px;
+  padding: 30px;
+  border-color:#7C3AED;
+  border-width:20px;
+  padding-left: 40px;
+  
 }
 
+.headshot > img {
+  width: 275px;
+  height: 325px;
+  align-content: center;
+  border-radius: 5px;
+ 
+}
+
+.title {
+  font-family: "Readex Pro", sans-serif;
+  color: #F1F5F9;
+  font-size: 26px;
+  font-weight: bold;
+}
