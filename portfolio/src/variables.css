@@ -3,28 +3,20 @@
 /* Define your global design system */
 :root {
   /* 🎨 Colors */
-  --color-primary: #0077ff;
+  --color-primary: #c91c30;
+  --color-secondary: #e22a44;
   --color-primary-light: #5aaaff;
   --color-primary-dark: #005fcc;
+  --box-shadow-color: rgba(0, 0, 0, 0.3);
+  --color-container: white;
+  --background-color: #f8f5f0;
+  --text-color: #000000;
+  --link-color: #000000;
 
   --color-bg: #f9f9f9;
   --color-surface: #ffffff;
   --color-text: #222222;
   --color-text-light: #555555;
-
-  /* 🧱 Spacing scale (consistent paddings/margins) */
-  --space-xs: 4px;
-  --space-sm: 8px;
-  --space-md: 16px;
-  --space-lg: 24px;
-  --space-xl: 40px;
-
-  /* 🔠 Typography */
-  --font-family: 'Inter', 'Roboto', sans-serif;
-  --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.25rem;
-  --font-size-xl: 2rem;
 
   /* 🔲 Borders and radii */
   --radius-sm: 4px;
@@ -32,4 +24,15 @@
   --radius-lg: 12px;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+html.dark {
+  --box-shadow-color: rgba(255, 255, 255, 0.053);
+  --color-container: #3b0b0e;
+  --background-color: #1a1818;
+  --text-color: #ffffff;
+  --link-color: #ffffff;
+  /* links are white in dark mode */
+
 }

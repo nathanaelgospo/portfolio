@@ -1,0 +1,42 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.highlight {
+    color: var(--color-primary);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.info h1 {
+    font-size: 32px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 12px;
+}
+
+.contact {
+    font-size: 28px;
+}
+
+.icon {
+    display: flex;
+    background-color: var(--color-primary);
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}

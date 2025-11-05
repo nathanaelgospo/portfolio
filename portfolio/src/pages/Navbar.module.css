@@ -1,0 +1,85 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--background-color);
+    padding-left: 100px;
+    font-size: 20px;
+    z-index: 999;
+}
+
+.name {
+    display: flex;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    justify-self: flex-start;
+}
+
+.name>:first-child {
+    text-shadow: 0 0 10px #093f7599
+}
+
+.name>:last-child {
+    color: var(--color-primary);
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 375px;
+}
+
+.links {
+    display: flex;
+    gap: 50px;
+}
+
+.darkModeToggle {
+    padding-left: 100px;
+    all: unset;
+    cursor: pointer
+}
+
+.sideBar {
+    display: none;
+}
+
+.sideBarOpen {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        justify-content: spa;
+        padding-left: 0px;
+        align-items: start;
+    }
+
+    .linkContainer {
+        display: none;
+    }
+
+    .sideBar {
+        display: block;
+        height: 60px;
+        width: 60px;
+        background-color: black;
+
+    }
+
+    /* When open */
+    .sideBarOpen {
+        display: block;
+        width: 250px;
+        /* How far it slides out */
+    }
+
+}

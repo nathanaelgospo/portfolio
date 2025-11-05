@@ -1,0 +1,21 @@
+.container {
+    min-height: calc(100vh);
+    /* min-height:100vh; */
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+.highlight {
+    color: var(--color-primary);
+}
+
+.container > p{
+    font-size: 30px;
+    text-align: center;
+    width:1200px;
+}
