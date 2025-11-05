@@ -16,13 +16,6 @@ export function Navbar() {
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </div>
-            <button
-                type="button" className={styles.darkModeToggle} onClick={() =>
-                    setTheme(theme === "dark" ? "light" : "dark")
-                }>
-                {theme === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
-
-            </button>
         </>);
     return (
         <div className={styles.container}>
@@ -33,18 +26,27 @@ export function Navbar() {
             <div className={styles.linkContainer}>
                 {val}
             </div>
-            <button
-                className={styles.sideBar}
+            <div
+                className={`${styles.hamburger} ${sideBarOpen ? styles.active : ""}`}
                 onClick={() => setSideBarOpen(!sideBarOpen)}
             >
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div className={`${styles.sideBarOpen} ${sideBarOpen ? styles.active : ""}`}>
+                {val}
+            </div>
+
+            <button
+                type="button" className={styles.darkModeToggle} onClick={() =>
+                    setTheme(theme === "dark" ? "light" : "dark")
+                }>
+                {theme === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
 
             </button>
 
-            {sideBarOpen && (
-                <div className={styles.sideBarOpen}>
-                    {val}
-                </div>
-            )}
         </div >
     );
 }
