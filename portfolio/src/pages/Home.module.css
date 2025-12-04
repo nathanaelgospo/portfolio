@@ -4,6 +4,7 @@
     justify-items: center;
     align-items: center;
     align-content: center;
+    transform: scale(0.8);
 }
 
 h1 {
@@ -14,21 +15,22 @@ h1 {
     color: var(--color-primary);
 }
 
-.container > p{
+.container>p {
     font-size: 30px;
     text-align: center;
-    width:1200px;
+    width: 1200px;
 }
 
 
 @media (max-width: 1280px) {
 
-    .container{
+    .container {
         text-align: center;
-        padding-left:12px;
+        padding-left: 12px;
         width: 90vw;
     }
-    .container > p{
-        width:fit-content;
+
+    .container>p {
+        width: fit-content;
     }
 }
